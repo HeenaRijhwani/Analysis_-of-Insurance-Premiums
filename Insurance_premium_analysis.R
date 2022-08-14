@@ -1,4 +1,4 @@
-setwd("C:/Users/heena/OneDrive/Desktop/CS 555/Project/Project_Heena_Rijhwani")
+#setwd("...")
 df<-read.csv("MedicalPremium.csv")
 #Data cleaning and EDA
 #first 6 rows
@@ -350,7 +350,7 @@ df2$Agegroup[df2$Age >=50] = "Senior"
 df2$Agegroup<-factor(df2$Agegroup)
 #Using One way ANOVA (Analysis of Variance) to compare means of more than 2 groups.
 #1. Set up the hypotheses and select the alpha level
-#H0 ??? u(young) = u(middleaged) =u(µsenior) (All underlying population means are equal)
+#H0 ??? u(young) = u(middleaged) =u(Âµsenior) (All underlying population means are equal)
 #H1 ??? uii != uj for some i and j (Not all of the underlying population means are equal)
 #alpha = 0.05
 
